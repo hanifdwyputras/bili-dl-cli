@@ -2,7 +2,7 @@ import { Option } from 'commander';
 
 /** @typedef {import('commander').Command} Program */
 
-import { searchService } from './services/index.js';
+import { downloadService, searchService } from './services/index.js';
 
 /**
  * Handle commander
@@ -22,4 +22,13 @@ export const handleProgram = async (program) => {
       new Option('-a, --anime', 'Just show the anime or filter animes')
     )
     .action(searchService);
+
+  // download
+  program
+    .command('download')
+    .description('Download Bilibili.TV Videos from an URL(s)')
+    .argument('<urls...>', 'An URL(s) to download')
+    .option('-tf, --to-file [path]', 'File path destination')
+    .requiredOption('-f, --folder <path>', 'Folder path destination')
+    .action(downloadService);
 };
