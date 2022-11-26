@@ -1,0 +1,26 @@
+{
+  "name": "@bilibili-dl/cli",
+  "version": "1.0.0",
+  "description": "Bilibili-DL Downloader",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint \"lib/**/*.js\"",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "keywords": [],
+  "author": "Hanif Dwy Putra S",
+  "license": "MIT",
+  "devDependencies": {
+    "@bilibili-dl/util": "^1.1.1",
+    "eslint": ">=5.16.0",
+    "eslint-config-google": "latest"
+  },
+  "repository": "https://github.com/hanifdwyputras/bili-dl-cli",
+  "dependencies": {
+    "@bilibili-dl/core": "^1.1.0",
+    "ffmpeg-static": "^5.1.0",
+    "piscina": "^3.2.0"
+  },
+  "type": "module",
+  "packageManager": "yarn@3.3.0"
+}

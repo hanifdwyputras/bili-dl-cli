@@ -1,0 +1,9 @@
+lib/
+*.yml
+*.lock
+.yarn
+node_modules
+tests
+.prettierignore
+*.mp4
+.gitignore
