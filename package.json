@@ -18,8 +18,10 @@
   "repository": "https://github.com/hanifdwyputras/bili-dl-cli",
   "dependencies": {
     "@bilibili-dl/core": "^1.1.0",
+    "commander": "^9.4.1",
     "ffmpeg-static": "^5.1.0",
-    "piscina": "^3.2.0"
+    "piscina": "^3.2.0",
+    "tty-table": "^4.1.6"
   },
   "type": "module",
   "packageManager": "yarn@3.3.0"
