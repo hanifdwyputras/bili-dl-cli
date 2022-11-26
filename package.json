@@ -24,5 +24,6 @@
     "tty-table": "^4.1.6"
   },
   "type": "module",
-  "packageManager": "yarn@3.3.0"
+  "packageManager": "yarn@3.3.0",
+  "bin": "./bin/cli.js"
 }
